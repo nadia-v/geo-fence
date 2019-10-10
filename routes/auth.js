@@ -2,6 +2,8 @@ const express = require('express');
 const router = express.Router();
 const authUtils = require('../utils/auth');
 const passport = require('passport');
+const flash = require('connect-flash')
+
 
 router.get('/login', (req, res, next)=>{
     const messages = req.flash();
